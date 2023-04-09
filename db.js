@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
-// const connection = mongoose.connect("mongodb://localhost:27017/HelpFoundation");
-const connection = mongoose.connect("mongodb+srv://raghbirsingh9101:W2zp4cy9rk%40@helpfounation.cjmltdu.mongodb.net/test");
+
+const connection = mongoose.connect("mongodb+srv://helpmongodb:helpmongodb@cluster0.wzf4alj.mongodb.net/help");
+
 
 const teamMemberSchema = mongoose.Schema({
     name: String,
