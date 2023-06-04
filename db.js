@@ -13,15 +13,21 @@ const teamMemberSchema = mongoose.Schema({
     twitter:String,
     instagram:String,
 })
+
 const testimonialSchema = mongoose.Schema({
-    testimonial: String
+    testimonial: String,
+    image:String,
+    name:String,
+    company:String
 })
+
 const gallerySchema = mongoose.Schema({
     title: String,
     date: String,
     description: String,
     images: Array
 })
+
 const messageSchema = mongoose.Schema({
     name: String,
     email: String,
@@ -30,6 +36,7 @@ const messageSchema = mongoose.Schema({
     subject: String,
     message: String
 })
+
 const blogSchema = mongoose.Schema({
     heading: String,
     blog: String,
@@ -44,6 +51,7 @@ const jobsSchema = mongoose.Schema({
     qualifications: Array,
     openPositions: String
 })
+
 const jobApplicationsSchema = mongoose.Schema({
     fullName: String,
     qualification: String,
@@ -58,6 +66,7 @@ const projectsSchema = mongoose.Schema({
     images:String,
     html:String
 })
+
 const eventSchema = mongoose.Schema({
     title: String,
     date: String,
@@ -72,17 +81,20 @@ const lifeAffected = mongoose.Schema({
     description: String,
     count:String,
 })
+
 const centers = mongoose.Schema({
     heading: String,
     location: String,
     description:String,
     image:String
 })
+
 const activityReports = mongoose.Schema({
     heading: String,
     images: Array,
     pdf:String,
 })
+
 const auditReports = mongoose.Schema({
     heading: String,
     images: Array,
